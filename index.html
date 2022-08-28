@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="Cai Heran">
+  <title>CaiHeran's GitHub Page</title>
+<style>
+  body {
+    background:url("MiyamizuMitsuha.jpg") fixed;
+    font-family: "'HarmonyOS Sans SC', 'Helvetica Neue', Helvetica, 'PingFang SC', 'Microsoft Yahei', sans-serif";
+    font-size: large;
+  }
+  .header {
+    font-size: large;
+    text-align: center;
+  }
+  .row-flex-container {
+    width: fit-content;
+    margin: auto;
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .column {
+    /* float: left; */
+    padding: 5px;
+    height: fit-content;
+  }
+  .column.left {
+    position: sticky;
+    top: 72px;
+    width: 12em;
+    padding: 5px;
+    border-radius: 6px;
+    overflow: visible;
+    background-color: rgba(234,234,234,0.6);
+  }
+  .column.middle {
+    position: static;
+    min-width: 45em;
+    max-width: 60em;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: auto;
+    border: medium solid rgba(255,255,255,0.6); /* solid: 实线边框*/
+  }
+  .column.right {
+    position: sticky;
+    top: 72px;
+    min-width: 8em;
+    padding: 5px;
+    border-radius: 6px;
+    overflow: visible;
+    background-color: rgba(234,234,234,0.6);
+  }
+  .contents {
+    padding: 4px 20px 4px 20px;
+    border: medium solid lightgray; /* solid: 实线边框*/
+    border-radius: 10px;
+    outline:lightgray solid thin;
+    overflow: auto;
+    background-color: rgba(234,234,234,0.75);
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Welcome to my blog page!</h1>
+  </div>
+  <div class="row-flex-container">
+    <div class="column left">
+      <h3 style="text-align:center">全站索引</h3>
+      <ul>
+        <li><a>Algorithm</a></li>
+        <li><a>Data Structure</a></li>
+      </ul>
+    </div>
+    <div class="column middle contents" style="font-size:large">
+      <h2>文章内容</h2>
+      <h1>Hello!</h1>
+      <p>contents</p>
+      <h1><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></h1>
+      <p>end.</p>
+    </div>
+    <div class="column right">
+      <h3 style="text-align:center">本文索引</h3>
+    </div>
+  </div>
+  <!-- <script src="1.js"></script> -->
+</body>
+</html>
