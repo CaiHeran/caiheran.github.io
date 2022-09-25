@@ -22,6 +22,13 @@
     flex-direction: row;
     justify-content: space-around;
   }
+  .column-container {
+    width: auto;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
   .column {
     /* float: left; */
     padding: 5px;
@@ -43,7 +50,9 @@
     padding: 10px;
     border-radius: 10px;
     overflow: auto;
-    border: medium solid rgba(255,255,255,0.6); /* solid: 实线边框*/
+    border: 2px solid rgba(208,215,211,0.8); /* solid: 实线边框*/
+    background-color: rgba(234,234,234,0.75);
+    box-shadow: 0 1px 5px rgb(18 18 18 / 10%);
   }
   .column.right {
     position: sticky;
@@ -58,7 +67,6 @@
     padding: 4px 20px 4px 20px;
     border: medium solid lightgray; /* solid: 实线边框*/
     border-radius: 10px;
-    outline:lightgray solid thin;
     overflow: auto;
     background-color: rgba(234,234,234,0.75);
   }
@@ -66,17 +74,17 @@
 </head>
 <body>
   <div class="header">
-    <h1>Welcome to my blog page!</h1>
+    <h1 style="text-align:center">Welcome to my blog page!</h1>
   </div>
   <div class="row-flex-container">
     <div class="column left">
-      <h3 style="text-align:center">全站索引</h3>
+      <h3 style="text-align:center">标签目录</h3>
       <ul>
         <li><a>Algorithm</a></li>
         <li><a>Data Structure</a></li>
       </ul>
     </div>
-    <div class="column middle contents" style="font-size:large">
+    <div class="column middle" style="font-size:large">
       <h2>文章内容</h2>
       <h1>Hello!</h1>
       <p>contents</p>
@@ -85,6 +93,9 @@
     </div>
     <div class="column right">
       <h3 style="text-align:center">本文索引</h3>
+      <ol>
+        <li><a>sth.</a></li>
+      </ol>
     </div>
   </div>
   <!-- <script src="1.js"></script> -->
